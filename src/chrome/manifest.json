@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "ker_demo",
   "version": "1.0.0",
-  "description": "谷歌插件模板 - vue3 + vite",
+  "description": "常用小工具 - vue3 + vite",
   "author": "ker",
   "icons": {
     "16": "img/icon.png",
@@ -32,8 +32,11 @@
         "*://*/*"
       ],
       "js": [
-        "assets/index.js"
+        "popup.js"
       ]
     }
-  ]
+  ],
+  "chrome_url_overrides": {
+    "newtab": "public/newtab.html"
+  }
 }

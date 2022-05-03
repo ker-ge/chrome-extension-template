@@ -7,6 +7,7 @@ import groupData from '@/utils/search_group.js'
 
 <template>
   <div class="myapp">
+    test页面
     <siteSearch :groupData="groupData" />
   </div>
 </template>
@@ -18,6 +19,6 @@ import groupData from '@/utils/search_group.js'
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  width: 600px;
+  margin-top: 100px;
 }
 </style>

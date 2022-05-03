@@ -84,7 +84,7 @@ export default {
   props: {
     groupData: {
       type: Array,
-      default: () => {
+      default: function () {
         return defaultGroup;
       },
     },
@@ -108,7 +108,7 @@ export default {
   },
   mounted() {
     // 定位光标在输入框里面
-    var oInput = document.getElementById("search_form__input");
+    var oInput = document.getElementById('search_form__input');
     oInput.focus();
   },
   methods: {
@@ -143,7 +143,8 @@ export default {
   box-sizing: border-box;
 }
 .site_search {
-  max-width: 600px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 .search_list {
   text-align: left;
@@ -156,7 +157,7 @@ export default {
 }
 .search_list .search_group span {
   display: block;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 32px;
   color: #aabfb9;
   text-align: center;
@@ -192,7 +193,7 @@ export default {
 }
 .search_list .search_group__list li {
   display: block;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 32px;
   color: #aabfb9;
   text-align: center;
@@ -211,7 +212,7 @@ export default {
 .website_list li {
   float: left;
   padding: 0 11px;
-  font-size: 13px;
+  font-size: 18px;
   line-height: 31px;
   border-radius: 3px 3px 0 0;
   cursor: pointer;
@@ -223,14 +224,14 @@ export default {
   position: relative;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   color: #518193;
-  font-size: 15px;
+  font-size: 18px;
 }
 .search_form__input {
   padding: 12px;
   width: 100%;
   height: 52px;
   line-height: 52px;
-  font-size: 16px;
+  font-size: 18px;
   border: 0;
   border-radius: 4px;
   outline: none;
