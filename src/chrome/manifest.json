@@ -5,20 +5,21 @@
   "description": "常用小工具 - vue3 + vite",
   "author": "ker",
   "icons": {
-    "16": "img/icon.png",
-    "48": "img/icon.png",
-    "128": "img/icon.png"
+    "16": "images/icon.jpg",
+    "48": "images/icon.jpg",
+    "128": "images/icon.jpg"
   },
   "action": {
-    "default_icon": "img/icon.png",
+    "default_icon": "images/icon.jpg",
     "default_title": "这是林北自己用的插件",
-    "default_popup": "index.html"
+    "default_popup": "public/popup.html"
   },
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "js/background.js"
   },
   "permissions": [
     "tabs",
+    "webRequest",
     "scripting",
     "storage",
     "contextMenus"
@@ -26,13 +27,24 @@
   "host_permissions": [
     "*://*/*"
   ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "public/popup.html"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
   "content_scripts": [
     {
       "matches": [
         "*://*/*"
       ],
       "js": [
-        "popup.js"
+        "js/jquery.js",
+        "js/popup.js"
       ]
     }
   ],

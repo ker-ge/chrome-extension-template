@@ -142,9 +142,6 @@ export default {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.site_search {
-  max-width: 600px;
-}
 .search_list {
   text-align: left;
   padding: 5px 5px 5px 5px;
